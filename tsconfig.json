@@ -1,0 +1,30 @@
+{
+  "include": [
+    "src",
+    "types",
+    "libs"
+  ],
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2015",
+    "importHelpers": true,
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "./dist/",
+    "rootDir": "./src",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "*": [
+        "src/*",
+        "node_modules/*"
+      ]
+    },
+    "jsx": "react",
+  }
+}
