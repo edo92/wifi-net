@@ -1,4 +1,4 @@
-# Usage
+## Usage
 
 ```
 npm install wifi-net
@@ -8,7 +8,7 @@ npm install wifi-net
 import * as network from "wifi-net";
 ```
 
-## Scan networks
+### Scan networks
 
 ```js
 network.scan((networks) => {
@@ -16,13 +16,13 @@ network.scan((networks) => {
 });
 ```
 
-## Connect to wifi
+### Connect to wifi
 
 ```js
 network.connect({ ssid: "my_ssid", password: "my_password" });
 ```
 
-## Disconnect wifi
+### Disconnect wifi
 
 ```js
 network.disconnect();
