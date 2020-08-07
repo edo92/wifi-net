@@ -6,7 +6,7 @@ export default class DiscoverWin32
 {
     public interfaces = (callback?: any) => 
     {
-        let ifaces = os.networkInterfaces();
+        const ifaces = os.networkInterfaces();
 
         callback && callback(ifaces);
         return ifaces;
@@ -63,7 +63,7 @@ export default class DiscoverWin32
 
     private parse = (netTmp: any) => 
     {
-        var network: any = {};
+        let network: any = {};
 
         // Match with key
         network.mac = netTmp[4] ? netTmp[4].match(/.*?:\s(.*)/)[1] : '';
