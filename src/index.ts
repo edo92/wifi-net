@@ -1,17 +1,32 @@
 import Discover from './discover';
 import Connect from './connect';
 
-const discover = new Discover();
-const connection = new Connect();
+class WifiNet 
+{
+    private iface: string | null  = null;
 
-export const scan = (callback: any): void => {
-    discover.scan(callback);
+    private discover = new Discover();
+    private connection = new Connect();
+
+    public setIface(iface: string)
+    {
+        this.iface = iface;
+    }
+
+    public scan = (callback: any): void =>
+    {
+        this.discover.scan(callback, this.iface);
+    }
+
+    public connect = (crid: any, callback?: any): void => 
+    {
+        this.connection.connectWifi(crid, this.iface, callback);
+    }
+
+    public disconnect = (callback?: any): void => 
+    {
+        this.connection.disconnectWifi(this.iface, callback);
+    }
 }
 
-export const connect = (crid: any, callback?: any): void => {
-    connection.connectWifi(crid, callback || null);
-}
-
-export const disconnect = (callback: any) => {
-    connection.disconnectWifi(callback);
-}
+export default new WifiNet();

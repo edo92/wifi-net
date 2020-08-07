@@ -2,9 +2,22 @@
   "version": "0.1.0",
   "license": "MIT",
   "main": "dist/index.d.js",
+  "name": "@edo92/wifi-net",
+  "author": "edo92",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/edo92/wifi-net"
+    "registry": "https://npm.pkg.github.com/"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edo92/wifi-net"
+  },
+  "keywords": [
+    "network",
+    "wifi",
+    "node wifi",
+    "wifi-control",
+    "control wifi with node.js"
+  ],
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
@@ -23,13 +36,7 @@
     "build": "webpack --config webpack.config.js -p"
   },
   "peerDependencies": {},
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
-  },
-  "name": "wifi-net",
-  "author": "Eduard Jacobs",
+  "husky": {},
   "module": "dist/index.esm.js",
   "devDependencies": {
     "@types/node": "^14.0.27",

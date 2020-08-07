@@ -24,7 +24,6 @@
         "src/*",
         "node_modules/*"
       ]
-    },
-    "jsx": "react",
+    }
   }
 }
