@@ -1,24 +1,27 @@
-## Usage
-- [x] Windows     - [x] Linux
+### Compatible 
+- [x] Windows
+- [x] Linux
 
 
+### Installation
 ```
 npm install wifi-net
 ```
 
+### Usage
 ```js
-import * as network from "wifi-net";
+import network from "wifi-net";
 ```
-
-### Scan networks
+or
+```js
+const network = require('wifi-net');
+```
 
 ```js
 network.scan((networks) => {
   console.log(networks);
 });
 ```
-
-### Connect to wifi
 
 ```js
 const cridentials = { 
@@ -38,10 +41,6 @@ network.disconnect((err) => {
   if(err) throw err;
 })
 ```
-
-<a class="text-gray-dark no-underline" href="#url">
-  A link with only part of it is <span class="link-hover-blue">blue on hover</span>.
-</a>
 
 <div style="background: #f7f7f7">
   <p>This project is heavily inspired from <a href="https://www.npmjs.com/package/node-wifi"> node-wifi </a> but with some structural and functionality differences.</p>
