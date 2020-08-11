@@ -1,5 +1,5 @@
 # Network WiFi
-Node.js project to interact with wifi network such as discover wifi, connect to wifi and disconnect form wifi.
+<a href='https://www.npmjs.com/package/wifi-net'>wifi-net</a> project to interact with wifi network such as discover wifi, connect to wifi and disconnect form wifi.
 
 ### Installation
 ```
@@ -10,13 +10,15 @@ npm install wifi-net
 - [x] Windows
 - [x] Linux
 
-### Import
+### Example
 ```js
 import network from "wifi-net";
+//# OR
+const network = require('wifi-net');
 
 network.scan((networks) => {
   console.log(networks);
-});
+})
 
 network.connect({ssid:'name', password:'pass', (err) => {
     if(err) throw err;
@@ -28,7 +30,7 @@ network.disconnect((err) => {
 ```
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
 <p>This project is heavily inspired from <a href="https://www.npmjs.com/package/node-wifi"> node-wifi </a> but with some structural and functionality differences.</p>

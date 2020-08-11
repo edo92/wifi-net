@@ -7,18 +7,18 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es2015",
+    "outDir": "./dist/",
+    "rootDir": "./src",
+    "moduleResolution": "node",
+    "baseUrl": "./",
     "importHelpers": true,
     "declaration": true,
     "sourceMap": true,
-    "outDir": "./dist/",
-    "rootDir": "./src",
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "moduleResolution": "node",
-    "baseUrl": "./",
     "paths": {
       "*": [
         "src/*",
