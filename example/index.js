@@ -1,17 +1,18 @@
-import network from '../dist';
+import network from 'wifi-net';
+// # OR
+const network = require('wifi-net');
 
 // Scan network
 network.scan((networks) => {
     console.log(networks);
 })
 
-
-// Connet to wifi network
+// Wifi cridentials
 const cridentials = {
     ssid: "my_ssid",
     password: "my_password"
 }
-
+// Connect to wifi
 network.connect(cridentials, (err) => {
     if (err) throw err;
 })
