@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.d.js",
   "name": "@edo92/wifi-net",
@@ -35,7 +35,6 @@
     "lint": "tsdx lint",
     "build": "webpack --config webpack.config.js -p"
   },
-  "peerDependencies": {},
   "husky": {},
   "module": "dist/index.esm.js",
   "devDependencies": {
@@ -52,6 +51,5 @@
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-node-externals": "^2.5.0"
-  },
-  "dependencies": {}
+  }
 }
