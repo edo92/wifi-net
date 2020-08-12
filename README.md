@@ -15,15 +15,24 @@ npm install wifi-net
 import network from "wifi-net";
 //# OR
 const network = require('wifi-net');
+```
 
+#### Scan wifi network
+```js
 network.scan((networks) => {
   console.log(networks);
 })
+```
 
+#### Connect to wifi
+```js
 network.connect({ssid:'name', password:'pass', (err) => {
     if(err) throw err;
 })
+```
 
+#### Disconnect
+```js
 network.disconnect((err) => {
   if(err) throw err;
 })
